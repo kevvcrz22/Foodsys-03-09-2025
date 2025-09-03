@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de datos</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <div>
+        <div id="cuerpo">
+
+            <header id="encabezado">
+                <h1>Conceptos generales de bases de datos
+                </h1>
+            </header>
+            <nav id="menu" style="text-align: center;">
+                <ul>
+                    <li>
+                        DICCIONARIO DE DATOS
+                        <ul class="subMenu" style="text-align: center;">
+                            <li>
+                                <a href="aprendices.html">Aprendices</a>
+                            </li>
+
+                            <li>
+                                <a href="programas.html">programas</a>
+                            </li>
+                            <li>
+                                <a href="areas.html">areas</a>
+                            </li>
+
+                            <li>
+                                <a href="fichas.html">fichas</a>
+                            </li>
+                            <li>
+                                <a href="boletas.html">boletas</a>
+                            </li>
+                            <li>
+                                <a href="usuarios.html">usuarios</a>
+                            </li>
+                            <li>
+                                <a href="contratos.html">contratos</a>
+                            </li>
+                            <li>
+                                <a href="empresas.html">empresas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        DIAGRAMA ENTIDAD RELACION
+                        <ul class="subMenu">
+                              <li>
+                               <a href="areas_programas.html">AREAS-PROGRAMAS</a>
+                            </li>
+                            <li>
+                                <a href="dia_aprendices.html">DIAGRAMA APRENDICES</a>
+                            </li>
+                            <li>
+                                <a href="usu_bol.html">USUARIOS-BOLETAS</a>
+                            </li>
+                            <li>
+                                <a href="emp_con.html">EMPRESAS-CONTRATOS</a>
+                            </li>
+                            <li>
+                                <a href="fic_apr.html">FICHAS-APRNDICES</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+            </nav>
+                
+        </div>
+
+    </div>
+    <br>
+<section>
+    <article>
+            <table>
+                <tr>
+                    <th colspan="5">Diccionario de datos de Foodsys</th>
+                </tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td colspan="3">Fichas</td>
+                </tr>
+                <tr>
+                    <td>Creación</td>
+                    <td colspan="3">31/07/2025</td>
+                </tr>
+                <tr>
+                    <td>Descripción</td>
+                    <td colspan="3">Registro de las fichas pertenecientes a los programas del Centro Agropecuario SENA
+                        La Granja Espinal
+                        Tolima</td>
+                </tr>
+                <tr>
+                    <th>Campo</th>
+                    <th>Tipo dato</th>
+                    <th>Tamaño</th>
+                    <th colspan="2">Descripción</th>
+                </tr>
+                <tr>
+                    <td>ID_Ficha</td>
+                    <td>INT</td>
+                    <td>11</td>
+                    <td>Es el numero con el que se identifica la ficha</td>
+                </tr>
+                <tr>
+                    <td>ID_Programa</td>
+                    <td>INT</td>
+                    <td>10</td>
+                    <td>Es el codigo del tegnologo al que pertenece la ficha</td>
+                </tr>
+                <tr>
+                    <td>Fecha Inicio lectiva</td>
+                    <td>DATE</td>
+                    <td>8</td>
+                    <td>Es la fecha en la que inicia la etapa lectiva</td>
+                </tr>
+
+                <tr>
+                    <td>Fecha Fin lectiva</td>
+                    <td>DATE</td>
+                    <td>8</td>
+                    <td>Es la fecha en la que termina la etapa lectiva </td>
+                </tr>
+                <tr>
+                    <td>Fecha Inicio practica</td>
+                    <td>DATE</td>
+                    <td>8</td>
+                    <td>Es la fecha de inicio de la etapa practia</td>
+                </tr>
+                <tr>
+                    <td>Fecha Fin practica</td>
+                    <td>DATE</td>
+                    <td>8</td>
+                    <td>Es la fecha en la que termina la etapa practica</td>
+                </tr>
+                <tr>
+                    <td>Aprendices que Iniciaron Formacion</td>
+                    <td>INT</td>
+                    <td>2</td>
+                    <td>Es la cantidad de aprendices que iniciaron la formacion</td>
+                </tr>
+                <tr>
+                    <td>Aprendices Desertados-Retirados</td>
+                    <td >INT</td>
+                    <td>2</td>
+                    <td>Es la cantidad de aprendices que se retiraron</td>
+                </tr>
+                <tr>
+                    <td>Aprendices en Formacion</td>
+                    <td>INT</td>
+                    <td>2</td>
+                    <td>Es la cantidad de aprendices que aun estan en formacion</td>
+                </tr>
+            
+
+            </table>
+
+</body>
+
+</html>
