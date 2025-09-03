@@ -1,0 +1,167 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom right, #f9f9f9, #e0e0e0);
+    animation: fadeIn 0.5s ease-in-out;
+}
+th,
+td {
+    border: 1px solid black;
+    padding: 14px;
+    text-align: left;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+th {
+    background-color: #4CAF50;
+    margin: auto;
+    height: auto;
+    width: auto;
+    color: beige;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid beige;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+tr {
+    background-color: white;
+    text-transform: lowercase;
+    font-size: 14px;
+
+}
+tr:hover {
+    background-color: whitesmoke;
+}
+h1 {
+    text-align: center;
+    color: beige;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+h2 {
+    color: beige;
+}
+h2 {
+    color: beige;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 14px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+div {
+    background: #4CAF50;
+    margin-bottom: 40px;
+    height: auto;
+    width: auto;
+    border-radius: 7px;
+    padding: 6px;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f5e9;
+    margin: 20px;
+}
+#menu {
+    margin: auto;
+    padding: 1px;
+    background: whitesmoke;
+    border-radius: 7px;
+    width: 922px;
+    text-align: start;
+}
+#menu ul {
+    list-style: circle;
+    justify-content: center;
+}
+#menu li {
+    display:inline-block;
+    color: black;
+    margin-right: 50px;
+    padding: 4px
+}
+#menu a {
+    display: inline-block;
+    padding: 10px;
+    justify-items: center;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+#menu a:hover {
+
+    background-color: #9abf9c;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.subMenu li {
+    display: list-item !important;
+}
+.subMenu {
+    display: none;
+}
+#menu ul li:hover .subMenu {
+  
+    display: block;
+    position: absolute;
+    background-color: #66BB6A;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.subMenuDos {
+    display: none;
+    position: absolute;
+    left: 50px;
+    width: 100px;
+    margin-top: 5px;
+    background-color: #ff0000;
+}
+.subMenu li:hover .subMenuDos {
+    display: block;
+}
+div img{
+    height: 800px;
+    width: 1100px;
+    padding: 10px;
+}
+/* 
+.subMenu li {
+    display: list-item !important;
+}
+
+.subMenu {
+    display: none;
+}
+
+#menu ul li:hover .subMenu {
+   
+    display: block;
+    position: absolute;
+    background-color: #cccccc;
+    margin-top: 5px;
+}
+
+.subMenuDos {
+   
+    display: none;
+    position: absolute;
+    left: 50px;
+    width: 100px;
+    margin-top: 5px;
+    background-color: #cccccc;
+}
+
+.subMenu li:hover .subMenuDos {
+    display: block;
+} */

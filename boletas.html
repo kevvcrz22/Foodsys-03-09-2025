@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de datos</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <div>
+        <div id="cuerpo">
+
+            <header id="encabezado">
+                <h1>Conceptos generales de bases de datos
+                </h1>
+            </header>
+            <nav id="menu" style="text-align: center;">
+                <ul>
+                    <li>
+                        DICCIONARIO DE DATOS
+                        <ul class="subMenu" style="text-align: center;">
+                            <li>
+                                <a href="aprendices.html">Aprendices</a>
+                            </li>
+
+                            <li>
+                                <a href="programas.html">programas</a>
+                            </li>
+                            <li>
+                                <a href="areas.html">areas</a>
+                            </li>
+
+                            <li>
+                                <a href="fichas.html">fichas</a>
+                            </li>
+                            <li>
+                                <a href="boletas.html">boletas</a>
+                            </li>
+                            <li>
+                                <a href="usuarios.html">usuarios</a>
+                            </li>
+                            <li>
+                                <a href="contratos.html">contratos</a>
+                            </li>
+                            <li>
+                                <a href="empresas.html">empresas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        DIAGRAMA ENTIDAD RELACION
+                        <ul class="subMenu">
+                            <li>
+                               <a href="areas_programas.html">AREAS-PROGRAMAS</a>
+                            </li>
+                            <li>
+                                <a href="dia_aprendices.html">DIAGRAMA APRENDICES</a>
+                            </li>
+                            <li>
+                                <a href="usu_bol.html">USUARIOS-BOLETAS</a>
+                            </li>
+                            <li>
+                                <a href="emp_con.html">EMPRESAS-CONTRATOS</a>
+                            </li>
+                            <li>
+                                <a href="fic_apr.html">FICHAS-APRNDICES</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+            </nav>
+                
+        </div>
+
+    </div>
+    <br>
+    <section>
+        <article>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">Diccionario de datos Foodsys</th>
+                    </tr>
+                    <tr>
+                        <td>Nombre</td>
+                        <td colspan="3">Boletas</td>
+
+                    </tr>
+                    <tr>
+                        <td>Creacion</td>
+                        <td colspan="3">30/07/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Descripcion</td>
+                        <td colspan="3">Registro de las boletas para los aprendices del centro agropecuario la granja
+                        </td>
+                    </tr>
+                    <th>Campo</th>
+                    <th>Tipo de dato</th>
+                    <th>Tamaño</th>
+                    <th>Descripcion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id_codigo</td>
+                        <td>Int</td>
+                        <td>8</td>
+                        <td>se ingresa un codigo unico a irrepetible</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha</td>
+                        <td>Date</td>
+                        <td>8</td>
+                        <td>Fecha en la que se genera la boleta para el aprendiz</td>
+                    </tr>
+                    <tr>
+                        <td>Horario</td>
+                        <td>time</td>
+                        <td>8</td>
+                        <td>Horario en el que pasa un aprendiz por su boleta o comprarla</td>
+                    </tr>
+                    <tr>
+                        <td>Tipo de alimentacion</td>
+                        <td>enum</td>
+                        <td>10</td>
+                        <td>(Desayuno, almuerzo, cena)</td>
+                    </tr>
+                    <tr>
+                        <td>Subsidio</td>
+                        <td>enum</td>
+                        <td>5</td>
+                        <td>Si el aprendiz tiene beneficio al 65% o 100% para la alimentacion</td>
+                </tbody>
+            </table>
+        </article>
+    </section>
+</body>
+
+</html>
