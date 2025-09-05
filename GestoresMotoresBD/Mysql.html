@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bases de datos</title>
+    <title>Mysql</title>
     <link rel="stylesheet" href="CSS/mi_est.css">
 </head>
 
@@ -23,7 +22,7 @@
                         BASES DE DATOS
                         <ul class="subMenu" style="text-align: center;">
                             <li>
-                                <a href="index.html">GESTORES DE BASES DE DATOS</a>
+                                <a href="GES_BD.html">GESTORES DE BASES DE DATOS</a>
                             </li>
                             <li>
                                 <a href="MOT_BD.html">MOTORES DE BASES DE DATOS</a>
@@ -34,23 +33,22 @@
                         MOTORES RELACIONALES
                         <ul class="subMenu">
                             <li>
-                                <a href="mysql.html">MySQL</a>
+                                <a href="Mysql.html">MySQL</a>
                             </li>
                             <li>
                                 <a href="sql.html">sqlite</a>
                             </li>
                             <li>
-                                <a href="mic.html">Microsoft SQL Server</a>
+                                <a href="mic.html">SQL Server</a>
                             </li>
                             <li>
-                                <a href="ora.html">Oracle</a>
-                            </li>
-                            <li>
-                                <a href="mar.html">MariaDB</a>
+                                <a href="Oracle.html">Oracle</a>
                             </li>
                             <li>
                                 <a href="pos.html">PostgreSQL</a>
                             </li>
+                            
+
                         </ul>
                     </li>
                     <li>
@@ -67,65 +65,55 @@
                             </li>
                         </ul>
                     </li>
-
                 </ul>
             </nav>
         </div>
     </div>
     <header>
-        <h3 id="cabeza">DynamoDB</h3>
+        <h3 id="cabeza">Gestor de bases de datos</h3>
     </header>
     <div class="contenedor-flex">
         <div id="izquierda">
-            <h3>Concepto</h3>
+            <h3>Mysql</h3>
             <p>
-                Es un servicio de base de datos NoSQL desarrollado
-            por Amazon Web Services (AWS).
-            A diferencia de las bases relacionales, no necesita un esquema fijo
-            y permite trabajar con datos en formato clave-valor o documento.
+                MySQL es un sistema de gestión de bases de datos relacional (RDBMS) de código abierto muy popular, utilizado para almacenar, organizar y acceder a datos de manera eficiente, especialmente en aplicaciones web. Se basa en el lenguaje SQL (Structured Query Language) y permite realizar operaciones básicas conocidas como CRUD: para crear datos se usa INSERT INTO usuarios (id, nombre) VALUES (1, 'María');, para consultar se emplea SELECT * FROM usuarios WHERE id = 1;, para actualizar se utiliza UPDATE usuarios SET nombre = 'María López' WHERE id = 1;, y para eliminar datos se ejecuta DELETE FROM usuarios WHERE id = 1;. MySQL destaca por su rapidez, fiabilidad y compatibilidad con múltiples plataformas, siendo una opción clave en entornos LAMP (Linux, Apache, MySQL, PHP).
             </p>
-
         </div>
 
         <div id="derecha">
-            <h3>caracteristicas generales</h3>
-            <p>          
-                DynamoDB es una base de datos NoSQL sin servidor 
-                y totalmente administrada que destaca por su alto 
-                rendimiento y escalabilidad, con latencia de un solo
-                 dígito en milisegundos y disponibilidad del 99.999%. 
-                 Sus características incluyen flexibilidad sin esquema, 
-                 replicación global, seguridad integrada, backups continuos y 
-                 la capacidad de integrarse con el ecosistema de AWS.
+            <h3>Ejercicio</h3>
+            <p>
+                <img src="IMG/Crear_Mysql.png" style="width: 400px; height: 300px;">
 
             </p>
-
+            
         </div>
     </div>
-
     <div class="contenedor-flex">
         <div id="izquierda">
-            <h2>crear</h2>
-           <img src="IMG/Crear_dynamo.png" style="width: 550px; height: 300px;">
+            <h3>Mysql</h3>
+            <p>
+                <img src="IMG/Consultar_Mysql.png" style="width: 400px; height: 300px;">
+            </p>
         </div>
 
         <div id="derecha">
-            <h2>consultar</h2>
-           <img src="IMG/Consultar_Dynamo.png" style="width: 450px; height: 300px;">
+            <h3>Ejercicio</h3>
+            <p>
+                <img src="IMG/Actualizar_mysql.png" style="width: 400px; height: 300px;">
+
+            </p>
+            
         </div>
     </div>
-
     <div class="contenedor-flex">
         <div id="izquierda">
-            <h2>actualizar</h2>
-           <img src="IMG/Actualizar_Dynamo.png" style="width: 450px; height: 300px;">
+            <h3>Mysql</h3>
+            <p>
+                <img src="IMG/Eliminar_Mysql.png" style="width: 400px; height: 300px;">
+            </p>
         </div>
 
-        <div id="derecha">
-            <h2>eliminar</h2>
-           <img src="IMG/Eliminar_Dynamo.png" style="width: 450px; height: 300px;">
-        </div>
-    </div>
 
 </body>
 
