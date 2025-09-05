@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +25,7 @@
                                 <a href="index.html">GESTORES DE BASES DE DATOS</a>
                             </li>
                             <li>
-                                <a href="MOT_BD.html">MOTORES DE BASES DE DATOS</a>
+                                <a href="Motores.html">MOTORES DE BASES DE DATOS</a>
                             </li>
                         </ul>
                     </li>
@@ -34,70 +33,69 @@
                         MOTORES RELACIONALES
                         <ul class="subMenu">
                             <li>
-                                <a href="mysql.html">MySQL</a>
+                                <a href="Mysql.html">MySQL</a>
                             </li>
                             <li>
                                 <a href="sql.html">sqlite</a>
                             </li>
                             <li>
-                                <a href="mic.html">Microsoft SQL Server</a>
+                                <a href="Server.html">SQL Server</a>
                             </li>
                             <li>
-                                <a href="ora.html">Oracle</a>
+                                <a href="Oracle.html">Oracle</a>
                             </li>
                             <li>
-                                <a href="mar.html">MariaDB</a>
+                                <a href="Post.html">PostgreSQL</a>
                             </li>
-                            <li>
-                                <a href="pos.html">PostgreSQL</a>
-                            </li>
+
+
                         </ul>
                     </li>
                     <li>
                         MOTORES NO RELACIONALES
                         <ul class="subMenu">
                             <li>
-                                <a href="mon.html">MongoDB</a>
+                                <a href="Mongo.html">MongoDB</a>
+                            </li>
+
+                            <li>
+                                <a href="Cassandra.html">Cassandra</a>
                             </li>
                             <li>
-                                <a href="red.html">Redis</a>
+                                <a href="Redis.html">Redis</a>
                             </li>
                             <li>
-                                <a href="cas.html">Cassandra</a>
+                                <a href="Hbase.html">Hbase</a>
                             </li>
                         </ul>
                     </li>
-
                 </ul>
             </nav>
         </div>
     </div>
     <header>
-        <h3 id="cabeza">DynamoDB</h3>
+        <h3 id="cabeza">cassandra</h3>
     </header>
     <div class="contenedor-flex">
         <div id="izquierda">
-            <h3>Concepto</h3>
+            <h3>concepto</h3>
             <p>
-                Es un servicio de base de datos NoSQL desarrollado
-            por Amazon Web Services (AWS).
-            A diferencia de las bases relacionales, no necesita un esquema fijo
-            y permite trabajar con datos en formato clave-valor o documento.
+                Apache Cassandra es un sistema de gestión de bases de datos NoSQL distribuido, diseñado para manejar
+                grandes volúmenes de datos en múltiples servidores con alta disponibilidad y sin un único punto de
+                fallo. Es muy utilizado en entornos de Big Data y en aplicaciones que requieren escalabilidad masiva y
+                tolerancia a fallos.
             </p>
-
         </div>
 
         <div id="derecha">
             <h3>caracteristicas generales</h3>
-            <p>          
-                DynamoDB es una base de datos NoSQL sin servidor 
-                y totalmente administrada que destaca por su alto 
-                rendimiento y escalabilidad, con latencia de un solo
-                 dígito en milisegundos y disponibilidad del 99.999%. 
-                 Sus características incluyen flexibilidad sin esquema, 
-                 replicación global, seguridad integrada, backups continuos y 
-                 la capacidad de integrarse con el ecosistema de AWS.
-
+            <p>
+                NoSQL y orientada a columnas: almacena datos en estructuras similares a tablas, pero con mayor
+                flexibilidad.
+                Código abierto (licencia Apache 2.0).
+                Desarrollada por Facebook inicialmente y luego liberada a la comunidad de Apache.
+                Altamente escalable horizontalmente: se pueden añadir nodos sin interrumpir el servicio.
+                Tolerante a fallos: los datos se replican en múltiples nodos para garantizar disponibilidad.
             </p>
 
         </div>
@@ -106,26 +104,28 @@
     <div class="contenedor-flex">
         <div id="izquierda">
             <h2>crear</h2>
-           <img src="IMG/Crear_dynamo.png" style="width: 550px; height: 300px;">
+            <img src="IMG/crear_cassandra.png" style="width: 450px; height: 300px;">
         </div>
 
         <div id="derecha">
             <h2>consultar</h2>
-           <img src="IMG/Consultar_Dynamo.png" style="width: 450px; height: 300px;">
+            <img src="IMG/consultar_cassandra.png" style="width: 450px; height: 300px;">
         </div>
     </div>
+
 
     <div class="contenedor-flex">
         <div id="izquierda">
             <h2>actualizar</h2>
-           <img src="IMG/Actualizar_Dynamo.png" style="width: 450px; height: 300px;">
+            <img src="IMG/actualizar_cassandra.png" style="width: 450px; height: 300px;">
         </div>
 
         <div id="derecha">
             <h2>eliminar</h2>
-           <img src="IMG/Eliminar_Dynamo.png" style="width: 450px; height: 300px;">
+            <img src="IMG/eliminar_cassandra.png" style="width: 450px; height: 300px;">
         </div>
     </div>
+
 
 </body>
 
