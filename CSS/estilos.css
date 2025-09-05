@@ -7,6 +7,10 @@ table {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     background: linear-gradient(to bottom right, #f9f9f9, #e0e0e0);
     animation: fadeIn 0.5s ease-in-out;
+    
+}
+td,th {
+    font-size: 16px;
 }
 th,
 td {
@@ -135,6 +139,7 @@ div img{
     width: 1100px;
     padding: 10px;
 }
+
 /* 
 .subMenu li {
     display: list-item !important;

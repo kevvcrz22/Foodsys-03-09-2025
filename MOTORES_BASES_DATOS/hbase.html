@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bases de datos</title>
+    <link rel="stylesheet" href="CSS/mi_est.css">
+</head>
+
+<body>
+    <div>
+        <div id="cuerpo">
+
+            <header id="encabezado">
+                <h1>Conceptos generales de bases de datos
+                </h1>
+            </header>
+            <nav id="menu" style="text-align: center;">
+                <ul>
+                    <li>
+                        BASES DE DATOS
+                        <ul class="subMenu" style="text-align: center;">
+                            <li>
+                                <a href="index.html">GESTORES DE BASES DE DATOS</a>
+                            </li>
+                            <li>
+                                <a href="MOT_BD.html">MOTORES DE BASES DE DATOS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        MOTORES RELACIONALES
+                        <ul class="subMenu">
+                            <li>
+                                <a href="mysql.html">MySQL</a>
+                            </li>
+                            <li>
+                                <a href="sql.html">sqlite</a>
+                            </li>
+                            <li>
+                                <a href="mic.html">Microsoft SQL Server</a>
+                            </li>
+                            <li>
+                                <a href="ora.html">Oracle</a>
+                            </li>
+                            <li>
+                                <a href="mar.html">MariaDB</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        MOTORES NO RELACIONALES
+                        <ul class="subMenu">
+                            <li>
+                                <a href="mon.html">MongoDB</a>
+                            </li>
+
+                            <li>
+                                <a href="cas.html">Cassandra</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <header>
+        <h3 id="cabeza">Hbase</h3>
+    </header>
+    <div class="contenedor-flex">
+        <div id="izquierda">
+            <h3>concepto</h3>
+            <p>
+                HBase es una base de datos NoSQL distribuida y de código abierto, diseñada para manejar grandes
+                volúmenes de datos en tiempo real. Está construida sobre el sistema de archivos distribuido de Hadoop
+                (HDFS), lo que le permite escalar de manera horizontal, es decir, agregar más nodos al clúster para
+                aumentar la capacidad de almacenamiento y procesamiento.
+
+
+            </p>
+        </div>
+
+        <div id="derecha">
+            <h3>caracteristicas generales</h3>
+            <p>
+                HBase es una base de datos NoSQL distribuida que funciona sobre Hadoop y HDFS. Está diseñada para
+                manejar grandes volúmenes de datos no estructurados o semiestructurados y utiliza un modelo orientado a
+                columnas organizado en familias de columnas. Una de sus principales características es la alta
+                escalabilidad horizontal, ya que permite añadir nodos fácilmente para soportar más datos o más usuarios.
+                Ofrece tolerancia a fallos mediante la replicación en varios nodos y garantiza consistencia fuerte,
+                asegurando que las lecturas devuelvan siempre el valor más reciente. HBase está optimizado para acceso
+                en tiempo real con lecturas y escrituras en milisegundos, lo que lo hace ideal para aplicaciones que
+                requieren rapidez con grandes cantidades de datos. Además, puede manejar billones de filas y millones de
+                columnas, soportando tablas de tamaño muy grande sin degradar el rendimiento.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="contenedor-flex">
+        <div id="izquierda">
+            <h2>crear</h2>
+            <img src="IMG/crear-hbase.png" style="width: 450px; height: 300px;">
+        </div>
+
+        <div id="derecha">
+            <h2>consultar</h2>
+            <img src="IMG/consultar-hbase.png" style="width: 450px; height: 300px;">
+        </div>
+    </div>
+
+
+    <div class="contenedor-flex">
+        <div id="izquierda">
+            <h2>actualizar</h2>
+            <img src="IMG/actualizar.hbase.png" style="width: 450px; height: 300px;">
+        </div>
+
+        <div id="derecha">
+            <h2>eliminar</h2>
+            <img src="IMG/eliminar-hbase.png" style="width: 450px; height: 300px;">
+        </div>
+    </div>
+
+</body>
+
+</html>
