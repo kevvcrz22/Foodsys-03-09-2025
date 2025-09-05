@@ -102,14 +102,15 @@ div img{
     color: whitesmoke;
     background-color: #4fd162;
     padding: 10px;
-    border-radius: 10px;
+    border-radius:10px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
 }
 
+
 .contenedor-flex {
   display: flex;
-  gap: 20px;  
+  gap: 30px;  
   background-color: #e8f5e9; 
   
 
@@ -125,6 +126,7 @@ div img{
 
   
 }
+
 
 #derecha {
   flex: 1;                          
