@@ -271,15 +271,89 @@ hr {
   border-radius: 6px;
 }
 
-.input-field{
-width: 100%;
-padding: 10px;
-margin: 5px 0;
-font-size: 14px;
-font-family: Arial, sans-serif;
-font-weight: normal;
-border: 1px solid #ccc; 
-border-radius: 4px;
-box-sizing: border-box;
-color:#606770;
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #606770;
 }
+
+/* ====== MENÚ PRINCIPAL ====== */
+#menu {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#menu ul li {
+  position: relative;
+}
+
+#menu ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#menu ul li a:hover {
+  background-color: none;
+}
+
+#menu ul li ul.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: green;
+  min-width: 200px;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+
+#menu ul li ul.submenu li {
+  width: 100%;
+}
+
+#menu ul li ul.submenu li a {
+  padding: 12px 15px;
+  color: #333;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#menu ul li ul.submenu li a:hover {
+  background-color: green;
+  color: #000;
+}
+
+#menu ul li:hover > ul.submenu {
+  display: block;
+}
+
+/* ========= SUBMENU DE SEGUNDO NIVEL (al lado) ========= */
+#menu ul li ul.submenu li ul.submenu {
+  top: 0;
+  left: 100%;
+  border-radius: 0 6px 6px 0;
+}
+
