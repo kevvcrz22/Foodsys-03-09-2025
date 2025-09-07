@@ -4,35 +4,93 @@
   <meta charset="UTF-8">
   <title>Login / Registro</title>
   <style>
-    body {
-      background: linear-gradient(to right, #e3f2fd, #fce4ec);     
-      background-image: url("IMG/sena.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+ #encabezado {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* separa logo y título */
+ padding: 7px;
 
-    .form-container {
-      backdrop-filter: blur(10px);
-      padding: 30px;
-      background: rgba(34, 34, 34, 0.322);
-      border-radius: 15px;
-      box-shadow: 0 4px 20px beige;
-      border: 3px solid #30a83a;
-      max-width: 400px;
-      width: 100%;
-      z-index: 10;
-      overflow: hidden;
-    }
+  backdrop-filter: blur(10px);
+  background: rgba(34, 34, 34, 0.322);
+  
+  box-shadow: 0 4px 20px beige;
+  border: 3px solid #30a83a;
+  border-radius: 4px;
 
+  
+  
+
+  
+}
+#encabezado h1 {
+  color: white;
+  font-family: cursive;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+#logo img {
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    background-image: url("IMG/FONDO_LOGIN.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; /* columna: header arriba, form abajo */
+  }
+    .main {
+    flex: 1; /* ocupa todo lo que queda debajo del header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+      .form-container {
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    background: rgba(34, 34, 34, 0.322);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px beige;
+    border: 3px solid #30a83a;
+    max-width: 400px;
+    width: 100%;
+    z-index: 10;
+  }
     h2 {
       text-align: center;
       color: white;
@@ -120,6 +178,13 @@
   </style>
 </head>
 <body>
+  <header id="encabezado">
+    <div id="logo">
+      <img src="IMG/logo.png" width="80" height="80" alt="Logo" />
+    </div>
+    <h1 id="titulo">FOODSYS</h1>
+  </header>
+   <div class="main">
   <div class="form-container">
     <!-- Login -->
     <div id="login-form">
@@ -170,6 +235,7 @@
       <button onclick="registrar()">Registrar</button>
       <div class="toggle" onclick="mostrarLogin()">¿Ya tienes cuenta? Iniciar sesión</div>
     </div>
+  </div>
   </div>
 
   <script>
