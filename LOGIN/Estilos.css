@@ -10,8 +10,9 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f0f2f5;
+  background-color: rgb(219, 218, 218);
   color: #42b72a;
+  
 }
 
 #cuerpo {
