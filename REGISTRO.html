@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio de Sesión - FOODSYS</title>
+  <link rel="stylesheet" href="Estilos.css" type="text/css" />
+</head>
+
+<body>
+  <div id="cuerpo">
+    <header id="encabezado">
+      <div id="logo">
+        <img src="logo.png" width="80" height="80" alt="Logo" />
+      </div>
+      <h1 id="titulo">FOODSYS</h1>
+    </header>
+
+    <nav id="menu">
+      <ul class="menu">
+
+        <li><a href="#">conceptos generales de datos</a>
+          <ul class="submenu">
+
+
+            <li><a href="#">Diccionario datos</a>
+              <ul class="submenu">
+
+                <li><a href="aprendices.html">Aprendices</a></li>
+                <li><a href="programas.html">programas</a></li>
+                <li><a href="areas.html">areas</a></li>
+                <li><a href="fichas.html">fichas</a></li>
+                <li><a href="boletas.html">boletas</a></li>
+                <li><a href="usuarios.html">usuarios</a></li>
+                <li><a href="contratos.html">contratos</a></li>
+                <li><a href="empresas.html">empresas</a></li>
+              </ul>
+            </li>
+
+
+          
+          
+        <li><a href="#">Diagrama Entidad Relacion</a>
+          <ul class="submenu">
+
+            <li><a href="areas_programas.html">Areas-Programas</a></li>
+            <li><a href="dia_aprendices.html">Diagrama-Aprendices</a></li>
+            <li><a href="usu_bol.html">Usuarios-Boletas</a></li>
+            <li><a href="emp_con.html">Empresas-contratos</a></li>
+            <li><a href="fic_apr.html">Fichas-Aprendices </a></li>
+
+          </ul>
+        </li>
+          </ul>
+
+        </li>
+
+        <li><a href="#">Gestor Bases de datos</a>
+          <ul class="submenu">
+            <li><a href="indexx.html">Conceptos</a></li>
+            
+          </ul>
+        </li>
+
+        <li><a href="#">Configuración</a>
+          <ul class="submenu">
+            <li><a href="#">Usuarios</a></li>
+            <li><a href="#">Roles</a></li>
+            <li><a href="#">Preferencias</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Salir</a></li>
+      </ul>
+    </nav>
+
+    <section id="login-section">
+      <div id="login-box">
+        <div id="left-panel">
+          <h1 id="fb-title">FOODSYS</h1>
+          <p id="fb-subtitle">REGISTRAR APRENDIZ</p>
+          <hr />
+        </div>
+        <div id="right-panel">
+          <input type="text" placeholder="Nombre Aprendiz" class="input-field" />
+          <input type="text" placeholder="Apellidos Aprendiz" class="input-field" />
+
+          <select id="TipoDocumento" class="input-field">
+            <option value="">Tipo de Documento</option>
+            <option value="Cedula">C.C</option>
+            <option value="Tarjeta">T.I</option>
+          </select>
+
+          <input type="text" placeholder="Número de documento" class="input-field" />
+          <input type="email" placeholder="Correo electrónico" class="input-field" />
+          <input type="text" placeholder="Departamento" class="input-field" />
+          <input type="text" placeholder="Ciudad o Municipio" class="input-field" />
+          <input type="tel" placeholder="Teléfono de contacto" class="input-field" />
+          <input type="text" placeholder="Excepciones (opcional)" class="input-field" />
+
+          <select id="Estado" class="input-field">
+            <option value="">Estado</option>
+            <option value="Activo">Activo</option>
+            <option value="Condicionado">Condicionado</option>
+            <option value="Inactivo">Inactivo</option>
+          </select>
+
+          <select id="Interno" class="input-field">
+            <option value="">Centro de convivencia</option>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select>
+
+          <select id="Contrato" class="input-field">
+            <option value="">Contrato de Aprendizaje</option>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select>
+
+          <select id="Genero" class="input-field">
+            <option value="">Género</option>
+            <option value="F">Femenino</option>
+            <option value="M">Masculino</option>
+          </select>
+
+          <button id="btn" class="login-btn">Registrar</button>
+        </div>
+      </div>
+    </section>
+
+    <footer id="pie">
+      © 2026 FOODSYS
+    </footer>
+  </div>
+</body>
+
+</html>

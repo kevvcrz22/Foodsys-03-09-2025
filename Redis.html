@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oracle</title>
-    <link rel="stylesheet" href="CSS/mi_est.css">
+    <title>bases de datos</title>
+    <link rel="stylesheet" href="/mi_est.css">
 </head>
 
 <body>
@@ -74,29 +74,61 @@
         </div>
     </div>
     <header>
-        <h3 id="cabeza">Gestor de bases de datos</h3>
+        <h3 id="cabeza">Rediz</h3>
     </header>
     <div class="contenedor-flex">
         <div id="izquierda">
-            <h3>Oracle</h3>
+            <h3>concepto</h3>
             <p>
-                Oracle es un sistema de gestión de bases de datos relacional (RDBMS) desarrollado por Oracle Corporation, diseñado para manejar grandes volúmenes de datos con alta disponibilidad, seguridad y rendimiento. Oracle permite realizar operaciones básicas de base de datos conocidas como CRUD (Crear, Leer, Actualizar y Eliminar). Para crear datos, se usa la sentencia INSERT INTO empleados (id, nombre) VALUES (1, 'Carlos');. Para consultar, se emplea SELECT * FROM empleados WHERE id = 1;. Para actualizar, se utiliza UPDATE empleados SET nombre = 'Carlos Pérez' WHERE id = 1;, y para eliminar datos, se ejecuta DELETE FROM empleados WHERE id = 1;. Estas operaciones permiten gestionar eficientemente la información dentro de una base de datos Oracle.
+                Redis es una base de datos en memoria, de código abierto,
+                que se utiliza principalmente como un almacén de datos clave-valor.
+                A diferencia de las bases de datos tradicionales que almacenan datos en disco,
+                Redis mantiene los datos en la memoria RAM, lo que permite acceder a ellos de manera extremadamente
+                rápida. Por esta razón, Redis es muy popular para casos donde la velocidad es crucial, como en sistemas
+                de caching, colas de mensajes, sesiones de usuario o ranking en tiempo real
+
+
+
             </p>
         </div>
 
         <div id="derecha">
-            <h3>Ejercicio</h3>
+            <h3>caracteristicas generales</h3>
             <p>
-                <img src="IMG/Create_Oracle.png" style="width: 400px; height: 300px;">
-                <img src="IMG/Consultar_Oracle.png" style="width: 400px; height: 300px;">
-                <img src="IMG/Actualizar_Oracle.png" style="width: 400px; height: 300px;">
-                <img src="IMG/Eliminar_Oracle.png" style="width: 400px; height: 300px;">
-
+                Redis es una base de datos en memoria que destaca por su alta velocidad y eficiencia. Una de sus
+                principales características es que almacena todos los datos directamente en la RAM, lo que permite
+                acceder y modificar la información de manera casi instantánea. Aunque Redis es conocido como una base de
+                datos clave-valor, también soporta múltiples estructuras de datos complejas como listas, hashes,
+                conjuntos y conjuntos ordenados, lo que lo hace muy flexible para distintos tipos de aplicaciones
             </p>
-            
+
         </div>
     </div>
 
+    <div class="contenedor-flex">
+        <div id="izquierda">
+            <h2>crear</h2>
+            <img src="IMG/crear-redis.png" style="width: 450px; height: 300px;">
+        </div>
+
+        <div id="derecha">
+            <h2>consultar</h2>
+            <img src="IMG/consultarredis.png" style="width: 450px; height: 300px;">
+        </div>
+    </div>
+
+
+    <div class="contenedor-flex">
+        <div id="izquierda">
+            <h2>actualizar</h2>
+            <img src="IMG/Actualizar-redis.png" style="width: 450px; height: 300px;">
+        </div>
+
+        <div id="derecha">
+            <h2>eliminar</h2>
+            <img src="IMG/eliminar-redis.png" style="width: 450px; height: 300px;">
+        </div>
+    </div>
 
 </body>
 
