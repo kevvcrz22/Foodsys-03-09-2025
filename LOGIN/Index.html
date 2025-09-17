@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Foodsys — Iniciar sesión</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body>
+  <header class="topbar" role="banner">
+    <div class="inner">
+      <a class="brand" href="#" aria-label="Foodsys - inicio">
+        <img src="Img/Logo.png" alt="Logo Foodsys" class="logo" />
+        <span class="brand-name">Foodsys</span>
+      </a>
+
+      <nav class="navlinks" role="navigation" aria-label="Enlaces principales">
+        <a href="Index.html">Inicio</a>
+        <a href="#">Vision</a>
+        <a href="#">Mision</a>
+        <a href="#">Contacto</a>
+        <a href="#">Soporte</a>
+        <a href="#">¿Que es Foodsys?</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" role="main">
+    <section class="hero" aria-labelledby="bienvenido">
+      <h1 id="bienvenido">Bienvenido a FOODSYS</h1>
+      <p>Accede al sistema de la empresa con tu usuario y contraseña. Si no tienes cuenta, contacta con el área de
+        sistemas. 
+        Te brindaremos ayuda</p>
+      <p style="margin-top:10px;font-weight:600;color:var(--azul)">FOODSYS te brinda una exelente organizacion para grandes registros.</p>
+
+      <img id="destacada"src="Img/Imagen de WhatsApp 2025-09-05 a las 10.47.51_efa7b7d3.jpg">
+
+    </section>
+
+
+
+    <aside class="card" aria-labelledby="login">
+      <h2 id="login">Iniciar sesión</h2>
+      <p class="sub">Introduce tus credenciales corporativas</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="tipo">Tipo de documento</label>
+          <select id="tipo" required>
+            <option value="">Seleccione su documento</option>
+            <option value="cc">Cédula de ciudadanía</option>
+            <option value="ti">Tarjeta identidad</option>
+            <option value="ce">Cédula de extranjería</option>
+            <option value="passport">Pasaporte</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="documento">Número de documento</label>
+          <input id="documento" type="text" placeholder="Ej: 123456789" required inputmode="numeric" />
+        </div>
+
+        <div class="field input-row">
+          <label for="pass">Contraseña</label>
+          <input id="pass" type="password" placeholder="Tu contraseña" required minlength="6" />
+          <button type="button" class="show-pass" aria-label="Mostrar contraseña">Ver</button>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Iniciar sesión</button>
+          <button type="button" class="btn btn-secondary">Ayuda</button>
+        </div>
+
+        <div class="extras">
+          <a href="#">Olvidé mi contraseña</a>
+        </div>
+
+        <div class="small">¿No tienes cuenta? Dale click aqui <a href="Registro.html"> Regístrate aquí</a></div>
+      </form>
+    </aside>
+  </main>
+
+  <!-- Script externo -->
+  <script src="Js/scripts.js"></script>
+</body>
+
+</html>
