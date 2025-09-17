@@ -1,98 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/estilos.css">
-</head>
-
-<body style="text-align: center;">
-    <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base de datos</title>
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Diagrama ER - Empresas-Contratos | FoodSys</title>
+    <link rel="stylesheet" href="../../CSS/Estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <div id="cuerpo">
+    <div id="cuerpo">
+        <header class="topbar" role="banner">
+            <div class="inner">
+                <a class="brand" href="../../Index.html" aria-label="Foodsys - inicio">
+                    <img src="../../Logo/Logo.png" alt="Logo Foodsys" class="logo" />
+                    <span class="brand-name">Foodsys</span>
+                </a>
 
-            <header id="encabezado">
-                <h1>Conceptos generales de bases de datos
-                </h1>
-            </header>
-            <nav id="menu" style="text-align: center;">
-                <ul>
-                    <li>
-                        DICCIONARIO DE DATOS
-                        <ul class="subMenu" style="text-align: center;">
-                            <li>
-                                <a href="aprendices.html">Aprendices</a>
-                            </li>
+                <nav id="menu">
+                    <ul class="menu">
+                        <li><a href="../../Index.html">Inicio</a></li>
+                        <li><a href="#">Conceptos Generales de BD</a>
+                            <ul class="submenu">
+                                <li><a href="#">Diccionario de Datos ▸</a>
+                                    <ul class="submenu">
+                                        <li><a href="../../ConceptoGeneralBD/DiccionarioDatos/aprendices.html">Aprendices</a></li>
+                                        <li><a href="../../ConceptoGeneralBD/DiccionarioDatos/programas.html">Programas</a></li>
+                                        <li><a href="../../ConceptoGeneralBD/DiccionarioDatos/areas.html">Áreas</a></li>
+                                        <li><a href="../../ConceptoGeneralBD/DiccionarioDatos/fichas.html">Fichas</a></li>
+                                        <li><a href="../../ConceptoGeneralBD/DiccionarioDatos/boletas.html">Boletas</a></li>
+                                        <li><a href="../../ConceptoGeneralBD/DiccionarioDatos/usuarios.html">Usuarios</a></li>
+                                        <li><a href="../../ConceptoGeneralBD/DiccionarioDatos/contratos.html">Contratos</a></li>
+                                        <li><a href="../../ConceptoGeneralBD/DiccionarioDatos/empresas.html">Empresas</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Diagrama Entidad Relación ▸</a>
+                                    <ul class="submenu">
+                                        <li><a href="../../ConceptoGeneralBD/DiagramaEntidadRelacion/areas_programas.html">Áreas-Programas</a></li>
+                                        <li><a href="../../ConceptoGeneralBD/DiagramaEntidadRelacion/dia_aprendices.html">Aprendices</a></li>
+                                        <li><a href="../../ConceptoGeneralBD/DiagramaEntidadRelacion/usu_bol.html">Usuarios-Boletas</a></li>
+                                        <li><a href="../../ConceptoGeneralBD/DiagramaEntidadRelacion/emp_con.html">Empresas-Contratos</a></li>
+                                        <li><a href="../../ConceptoGeneralBD/DiagramaEntidadRelacion/fic_apr.html">Fichas-Aprendices</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Bases de Datos ▸</a>
+                            <ul class="submenu">
+                                <li><a href="Gestor.html">Gestor de Base de Datos</a></li>
+                                <li><a href="Motores.html">Motores de Bases de Datos ▸</a>
+                                    <ul class="submenu">
+                                        
+                                        <li><a href="#">Motores No Relacionales ▸</a>
+                                            <ul class="submenu">
+                                                <li><a href="../../Mongo/Mongo.html">MongoDB</a></li>
+                                                <li><a href="../../Cassandra/Cassandra.html">Cassandra</a></li>
+                                                <li><a href="../../Hbase/Hbase.html">HBase</a></li>
+                                                <li><a href="../../Dynamo/Dynamo.html">Dynamo</a></li>
+                                                <li><a href="../../Couch/couch.html">CouchDB</a></li>
+                                            </ul>
 
-                            <li>
-                                <a href="programas.html">programas</a>
-                            </li>
-                            <li>
-                                <a href="areas.html">areas</a>
-                            </li>
+                                        <li><a href="#">Motoresss Relacionales ▸</a>
+                                            <ul class="submenu">
 
-                            <li>
-                                <a href="fichas.html">fichas</a>
-                            </li>
-                            <li>
-                                <a href="boletas.html">boletas</a>
-                            </li>
-                            <li>
-                                <a href="usuarios.html">usuarios</a>
-                            </li>
-                            <li>
-                                <a href="contratos.html">contratos</a>
-                            </li>
-                            <li>
-                                <a href="empresas.html">empresas</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        DIAGRAMA ENTIDAD RELACION
-                        <ul class="subMenu">
-                             <li>
-                               <a href="areas_programas.html">AREAS-PROGRAMAS</a>
-                            </li>
-                            <li>
-                                <a href="dia_aprendices.html">DIAGRAMA APRENDICES</a>
-                            </li>
-                            <li>
-                                <a href="usu_bol.html">USUARIOS-BOLETAS</a>
-                            </li>
-                             <li>
-                                <a href="emp_con.html">EMPRESAS-CONTRATOS</a>
-                            </li>
-                            <li>
-                                <a href="fic_apr.html">FICHAS-APRNDICES</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                                                <li><a href="../../Mysql/Mysql.html">MySQL</a></li>
+                                                <li><a href="../../Lite/Lite.html">SQLite</a></li>
+                                                <li><a href="../../Server/Server.html">SQL Server</a></li>
+                                                <li><a href="../../Oracle/Oracle.html">Oracle</a></li>
+                                                <li><a href="../../MariaDB/MariaDB.html">MariaDB</a></li>
+                                        
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
 
+    <div class="page-header">
+        <h1>Diagrama Entidad-Relación</h1>
+        <p>Relación entre Empresas y Contratos en el sistema FoodSys</p>
+    </div>
 
-
-            </nav>
-                
+    <div class="image-showcase">
+        <div class="diagram-info">
+            <h3>Empresas - Contratos</h3>
+            <p>Este diagrama muestra la relación entre las empresas y los contratos de aprendizaje en el sistema FoodSys.</p>
         </div>
+        
+        <div class="diagram-container">
+            <img src="../../IMG/M-E-R-EMPRESAS-CONTRATOS.jpg" alt="Diagrama Entidad-Relación de Empresas y Contratos">
+        </div>
+    </div>
 
-    </div>
-    <div>
-        <h1>DIAGRAMA ENTIDAD RELACION DE EMPRESAS Y CONTRATOS</h1>
-        <img src="IMG/M-E-R-EMPRESAS-CONTRATOS.jpg" alt="">
-    </div>
 </body>
 
 </html>

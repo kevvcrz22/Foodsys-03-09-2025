@@ -1,0 +1,268 @@
+:root {
+  --verde: #42b72a;
+  --azul: #1861c1;
+  --blanco: #ffffff;
+  --texto: #222222;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+html,
+body {
+  height: 100%
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: var(--blanco);
+  color: var(--texto);
+  line-height: 1.4;
+  margin: 0;
+  float: none;
+}
+
+/* Header */
+header.topbar {
+  background: var(--azul);
+  color: var(--blanco);
+  padding: 14px 22px;
+}
+
+.topbar .inner {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand .logo {
+  width: 56px;
+  height: 56px;
+}
+
+.brand .brand-name {
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--verde);
+  text-transform: uppercase;
+}
+
+nav.navlinks {
+  margin-left: auto;
+  display: flex;
+  gap: 18px;
+}
+
+nav.navlinks a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+nav.navlinks a:hover {
+  background: rgba(255, 255, 255, 0.07)
+}
+.logo {
+  width: 56px;   
+  height: auto;  
+  display: block;
+}
+
+.logo {
+  width: 56px;
+  /* mismo tamaño que tenías con el svg */
+  height: auto;
+  /* mantiene proporción */
+  display: block;
+}
+
+/* Layout */
+.wrap {
+  max-width: 1150px;
+  margin: 34px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 30px;
+}
+
+.hero {
+  background: #e3e7e9;
+    border-radius: 12px;
+  padding: 36px;
+}
+
+.hero h1 {
+  color: var(--azul);
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.hero p {
+  color: #334;
+  font-size: 16px;
+  max-width: 68%;
+}
+
+/* Card */
+.card {
+  background: var(--blanco);
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  border-top: 6px solid var(--verde);
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 28px;
+  color: var(--verde);
+  margin-bottom: 4px;
+}
+
+.card p.sub {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+/* Form */
+form .field {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 15px;
+  background: #fbfbfb;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--azul);
+  box-shadow: 0 4px 16px rgba(24, 97, 193, 0.08);
+  background: #fff;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.btn-primary {
+  background: var(--verde);
+  color: var(--blanco);
+  flex: 1;
+}
+
+.btn-secondary {
+  background: var(--azul);
+  color: var(--blanco);
+}
+
+.extras {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.extras a {
+  color: var(--azul);
+  text-decoration: none;
+}
+
+.extras a:hover {
+  text-decoration: underline
+}
+
+.small {
+  font-size: 13px;
+  color: #666;
+  margin-top: 14px;
+  text-align: center;
+}
+
+/* Responsivo */
+@media (max-width:980px) {
+  .wrap {
+    grid-template-columns: 1fr;
+  }
+
+  nav.navlinks {
+    display: none
+  }
+}
+
+@media (max-width:420px) {
+  .brand .brand-name {
+    font-size: 20px
+  }
+
+  .card {
+    padding: 18px
+  }
+}
+
+/* Botón mostrar pass */
+.input-row {
+  position: relative;
+}
+
+.show-pass {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--azul);
+  font-weight: 600;
+}
+
+img {
+  width: 250px;
+  height: 170px;
+}
+
+#destacada{
+  text-align: center;
+  width: 400px;
+  height: auto;
+}

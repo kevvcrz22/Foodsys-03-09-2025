@@ -5,74 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bases de datos</title>
-    <link rel="stylesheet" href="mi_est.css">
+    <link rel="stylesheet" href="../CSS/Estilo.css">
 </head>
 
+<div id="cuerpo">
+
+             <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <body>
-    <div>
-        <div id="cuerpo">
+<header class="topbar" role="banner">
+  <div class="inner">
+    <a class="brand" href=".././Index.html" aria-label="Foodsys - inicio">
+      <img src=".././Logo/Logo.png" alt="Logo Foodsys" class="logo" />
+      <span class="brand-name">Foodsys</span>
+    </a>
 
-            <header id="encabezado">
-                <h1>Conceptos generales de bases de datos
-                </h1>
-            </header>
-            <nav id="menu" style="text-align: center;">
-                <ul>
-                    <li>
-                        BASES DE DATOS
-                        <ul class="subMenu" style="text-align: center;">
-                            <li>
-                                <a href="index.html">GESTORES DE BASES DE DATOS</a>
-                            </li>
-                            <li>
-                                <a href="Motores.html">MOTORES DE BASES DE DATOS</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        MOTORES RELACIONALES
-                        <ul class="subMenu">
-                            <li>
-                                <a href="Mysql.html">MySQL</a>
-                            </li>
-                            <li>
-                                <a href="sql.html">sqlite</a>
-                            </li>
-                            <li>
-                                <a href="Server.html">SQL Server</a>
-                            </li>
-                            <li>
-                                <a href="Oracle.html">Oracle</a>
-                            </li>
-                            <li>
-                                <a href="Post.html">PostgreSQL</a>
-                            </li>
+    <nav id="menu">
+      <ul class="menu">
+        <li><a href=".././Index.html">Inicio</a></li>
+
+        <li><a href="#">Conceptos Generales de BD</a>
+          <ul class="submenu">
+            <li><a href="#">Diccionario de Datos ▸</a>
+              <ul class="submenu">
+                <li><a href=".././ConceptoGeneralBD/DiccionarioDatos/aprendices.html">Aprendices</a></li>
+                <li><a href=".././ConceptoGeneralBD/DiccionarioDatos/programas.html">Programas</a></li>
+                <li><a href=".././ConceptoGeneralBD/DiccionarioDatos/areas.html">Áreas</a></li>
+                <li><a href=".././ConceptoGeneralBD/DiccionarioDatos/fichas.html">Fichas</a></li>
+                <li><a href=".././ConceptoGeneralBD/DiccionarioDatos/boletas.html">Boletas</a></li>
+                <li><a href=".././ConceptoGeneralBD/DiccionarioDatos/usuarios.html">Usuarios</a></li>
+                <li><a href=".././ConceptoGeneralBD/DiccionarioDatos/contratos.html">Contratos</a></li>
+                <li><a href=".././ConceptoGeneralBD/DiccionarioDatos/empresas.html">Empresas</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Diagrama Entidad Relación ▸</a>
+              <ul class="submenu">
+                <li><a href=".././ConceptoGeneralBD/DiagramaEntidadRelacion/areas_programas.html">Áreas-Programas</a></li>
+                <li><a href=".././ConceptoGeneralBD/DiagramaEntidadRelacion/dia_aprendices.html">Aprendices</a></li>
+                <li><a href=".././ConceptoGeneralBD/DiagramaEntidadRelacion/usu_bol.html">Usuarios-Boletas</a></li>
+                <li><a href=".././ConceptoGeneralBD/DiagramaEntidadRelacion/emp_con.html">Empresas-Contratos</a></li>
+                <li><a href=".././ConceptoGeneralBD/DiagramaEntidadRelacion/fic_apr.html">Fichas-Aprendices</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+                        <li><a href="#">Bases de Datos ▸</a>
+                            <ul class="submenu">
+                                <li><a href="Gestor.html">Gestor de Base de Datos</a></li>
+                                <li><a href="Motores.html">Motores de Bases de Datos ▸</a>
+                                    <ul class="submenu">
+                                        
+                                        <li><a href="#">Motores No Relacionales ▸</a>
+                                            <ul class="submenu">
+                                                <li><a href="../Mongo/Mongo.html">MongoDB</a></li>
+                                                <li><a href="../Cassandra/Cassandra.html">Cassandra</a></li>
+                                                <li><a href="../Hbase/Hbase.html">HBase</a></li>
+                                                <li><a href="Dynamo.html">Dynamo</a></li>
+                                                <li><a href="../Couch/couch.html">CouchDB</a></li>
+                                            </ul>
+
+                                        <li><a href="#">Motoresss Relacionales ▸</a>
+                                            <ul class="submenu">
+
+                                                <li><a href="../Mysql/Mysql.html">MySQL</a></li>
+                                                <li><a href="../Lite/Lite.html">SQLite</a></li>
+                                                <li><a href="../Server/Server.html">SQL Server</a></li>
+                                                <li><a href="../Oracle/Oracle.html">Oracle</a></li>
+                                                <li><a href="../MariaDB/MariaDB.html">MariaDB</a></li>
+                                        
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 
-                        </ul>
-                    </li>
-                    <li>
-                        MOTORES NO RELACIONALES
-                        <ul class="subMenu">
-                            <li>
-                                <a href="Mongo.html">MongoDB</a>
-                            </li>
-
-                            <li>
-                                <a href="Cassandra.html">Cassandra</a>
-                            </li>
-                            <li>
-                                <a href="Redis.html">Redis</a>
-                            </li>
-                            <li>
-                                <a href="Hbase.html">Hbase</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
         </div>
-    </div>
     <header>
         <h3 id="cabeza">Hbase</h3>
     </header>
