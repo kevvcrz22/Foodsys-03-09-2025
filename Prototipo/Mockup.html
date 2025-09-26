@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mockup - Foodsys</title>
-  <link rel="stylesheet" href="../CSS/Estilo.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
- 
+  <link rel="stylesheet" href="CSS/Estilo.css">
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -39,7 +38,8 @@
 
               <li><a href="#">Diagrama Entidad Relación ▸</a>
                 <ul class="submenu">
-                  <li><a href=".././ConceptoGeneralBD/DiagramaEntidadRelacion/areas_programas.html">Áreas-Programas</a></li>
+                  <li><a href=".././ConceptoGeneralBD/DiagramaEntidadRelacion/areas_programas.html">Áreas-Programas</a>
+                  </li>
                   <li><a href=".././ConceptoGeneralBD/DiagramaEntidadRelacion/dia_aprendices.html">Aprendices</a></li>
                   <li><a href=".././ConceptoGeneralBD/DiagramaEntidadRelacion/usu_bol.html">Usuarios-Boletas</a></li>
                   <li><a href=".././ConceptoGeneralBD/DiagramaEntidadRelacion/emp_con.html">Empresas-Contratos</a></li>
@@ -77,7 +77,7 @@
               </li>
             </ul>
           </li>
-          
+
           <li><a href="#">Prototipos</a>
             <ul class="submenu">
               <li><a href="../Prototipo/Mockup.html"> Mockup</a></li>
@@ -93,71 +93,54 @@
     <div class="gallery-container">
       <div class="gallery-title">
         <h1>Mockups del Sistema Foodsys</h1>
-        <p>Explora las diferentes interfaces y diseños que tendrá nuestra aplicación. Haz clic en cada imagen para verla en tamaño completo.</p>
+        <p>Explora las diferentes interfaces y diseños que tendrá nuestra aplicación. Haz clic en cada imagen para verla
+          en tamaño completo.</p>
       </div>
 
-     
 
-      <!-- Grid de mockups -->
-      <div class="mockup-grid">
-        <!-- Mockup 1 -->
-        <div class="mockup-card" data-category="desktop">
-          <img src="Img/Inicio.jpg" alt="Mockup de Inicio de Foodsys" class="mockup-img">
-          <div class="mockup-info">
-            <h3>Página de Inicio</h3>
-            <p>Interfaz principal del sistema con dashboard y acceso rápido a las funcionalidades.</p>
-          </div>
-        </div>
 
-        <!-- Mockup 2 -->
-        <div class="mockup-card" data-category="desktop">
-          <img src="Img/Interno.jpg" alt="Mockup de Gestión de Menús" class="mockup-img">
-          <div class="mockup-info">
-            <h3>Pagina de Internos</h3>
-            <p>Interfaz para Internos y crear menús de los modulos de que va hacer uso.</p>
-          </div>
-        </div>
+    
+<div id="cardsContainer" class="d-flex flex-wrap justify-content-evenly p-4 gap-4">
 
-        <!-- Mockup 3 -->
-        <div class="mockup-card" data-category="mobile">
-          <img src="Img/Introduccion.jpg" alt="Mockup Móvil de Foodsys" class="mockup-img">
-          <div class="mockup-info">
-            <h3>Vista de la pagina de Bienvenida</h3>
-            <p>Interfaz adaptada para dispositivos móviles para saber sobre foodsys y la introduccion.</p>
-          </div>
-        </div>
+  <!-- Card 1 (queda en HTML) -->
+  <div class="card" style="width: 18rem;">
+    <img src="Img/Inicio.jpg"
+         alt="Mockup de Inicio de Foodsys"
+         class="card-img-top img-uniforme rounded shadow-sm mockup-img"
+         data-bs-toggle="modal"
+         data-bs-target="#imgModal"
+         onclick="cambiar(1)">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Página de Inicio</h5>
+      <p class="card-text">
+        Interfaz principal del sistema con dashboard y acceso rápido a las funcionalidades.
+      </p>
+    </div>
+  </div>
 
-        <!-- Mockup 4 -->
-        <div class="mockup-card" data-category="tablet">
-          <img src="Img/Monitor.jpg" alt="Mockup Tablet de Foodsys" class="mockup-img">
-          <div class="mockup-info">
-            <h3>Vista Del Monitor</h3>
-            <p>Interfaz cuando el monitor inicie sesion con sus modulos.</p>
-          </div>
-        </div>
+</div>
 
-        <!-- Mockup 5 -->
-        <div class="mockup-card" data-category="desktop">
-          <img src="Img/pagosExterno.jpg" alt="Mockup de Reportes" class="mockup-img">
-          <div class="mockup-info">
-            <h3>Pagos Aprendiz Externo</h3>
-            <p>Interfaz de pagos para aprendices externos y la reserva de los alimentos.</p>
-          </div>
-        </div>
+    </div>
 
-        <!-- Mockup 6 -->
-        <div class="mockup-card" data-category="mobile">
-          <img src="Img/Administrador.jpg" alt="Mockup Móvil de Login" class="mockup-img">
-          <div class="mockup-info">
-            <h3>Vista del Administrador</h3>
-            <p>Interfaz de Administrador de inicio de sesion, con estadisticas de los aprendices.</p>
-          </div>
-        </div>
-      </div>
+    </div>
+    </div>
     </div>
   </main>
 
+  <!-- Modal para mostrar la imagen -->
+  <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <img id="imagen" src="" class="img-fluid w-100" alt="Imagen grande">
+        </div>
+      </div>
+    </div>
+  </div>
+
   
+   <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="JS/mokup.js"></script>
 </body>
 
 </html>
