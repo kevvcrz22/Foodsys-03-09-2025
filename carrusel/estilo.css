@@ -1,0 +1,29 @@
+
+#miCarrusel {
+  width:50%;
+  height: 50%;          
+  margin: 0 auto;
+}
+
+
+.carousel-item {
+  height: 600px;          
+}
+
+
+.carousel-item img {
+  width: 100%;            
+  height:100%;           
+  object-fit: cover;    
+  border-radius: 15px;    
+  display: block;
+}
+
+h5, p {
+    color:
+     black;
+}
+body{
+    background-image: url(casino.png.jpg);
+}
+
