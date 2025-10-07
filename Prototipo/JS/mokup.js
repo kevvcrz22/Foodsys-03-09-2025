@@ -29,6 +29,18 @@ function cambiar(numeroDeImagen) {
         case 8:
             imagen.src = "Img/boleta_int.jpg";
             break;
+        case 9:
+            imagen.src = "Img/Contratista.png";
+            break;
+        case 10:
+            imagen.src = "Img/Externo.png";
+            break;
+        case 11:
+            imagen.src = "Img/Administrador.jpg";
+            break;
+        case 12:
+            imagen.src = "Img/Pasante.jpg";
+            break;
         default:
     }
 }
@@ -69,7 +81,27 @@ const cardsData = [
     img: "Img/boleta_int.jpg",
     title: "Vista al reservar boletas aprendiz interno",
     text: "Interfaz gráfica del aprendiz al reservar una boleta."
-  }
+  },
+  {
+    img: "Img/Contratista.png",
+    title: "Vista del contratista",
+    text: "Interfaz gráfica del contratista con os registros de boletas."
+  },
+  {
+    img: "Img/Externo.png",
+    title: "Vista del aprendiz externo",
+    text: "Interfaz gráfica general del aprendiz externo ."
+  },
+  {
+    img: "Img/Administrador.jpg",
+    title: "Vista del administrador",
+    text: "Interfaz gráfica del administrador al ver reportes y estadisticas."
+  },
+  {
+    img: "Img/Pasante.jpg",
+    title: "Vista del pasante",
+    text: "Interfaz gráfica del pasante al reservar una boleta."
+  },
 ];
 
 const container = document.getElementById("cardsContainer");
